@@ -1,6 +1,7 @@
 import argparse
 import math
 import time
+import pandas as pd
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
@@ -20,7 +21,6 @@ from sklearn.model_selection import train_test_split
 from data_parallel import BalancedDataParallel
 from transformers import GPT2TokenizerFast, GPT2LMHeadModel, GPT2Config
 from transformers import BertTokenizerFast
-import pandas as pd
 import torch.nn.utils.rnn as rnn_utils
 import numpy as np
 from dataset import MyDataset
